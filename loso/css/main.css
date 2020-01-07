@@ -1,5 +1,5 @@
 *:focus {
-  outline: none;
+  outline: none !important;
 }
 * {
   margin: 0;
@@ -131,6 +131,18 @@ a:active {
 @media only screen and (max-width: 767px) {
   .media-checker {
     z-index: 767;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 567px) {
+  .media-checker {
+    z-index: 567;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 566px) {
+  .media-checker {
+    z-index: 566;
   }
 }
 /* Extra Small Devices, Phones */

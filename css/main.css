@@ -1,8 +1,10 @@
 *:focus {
-  outline: none;
+  outline: none !important;
 }
 * {
   margin: 0;
+  -webkit-print-color-adjust: exact !important;
+  color-adjust: exact !important;
 }
 html {
   box-sizing: border-box;
@@ -95,6 +97,12 @@ a:active {
   width: 100%;
   height: auto;
 }
+@media (min-width: 1600px) {
+  .container {
+    width: 1570px;
+    max-width: 1570px;
+  }
+}
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .media-checker {
@@ -123,6 +131,18 @@ a:active {
 @media only screen and (max-width: 767px) {
   .media-checker {
     z-index: 767;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 567px) {
+  .media-checker {
+    z-index: 567;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 566px) {
+  .media-checker {
+    z-index: 566;
   }
 }
 /* Extra Small Devices, Phones */
@@ -593,7 +613,7 @@ body {
   text-align: center;
   color: white;
   margin: 0;
-  padding: 50px 0 20px;
+  padding: 50px 0;
   font-size: 38px;
 }
 .portfolio-wrapper .portfolio h2:after {

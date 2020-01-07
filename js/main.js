@@ -1,6 +1,6 @@
 /**
- * User: Agenzzia
- * Web:  www.agenzzia.com
+ * User: Nemanja Tomin (nemanja93tomin@gmail.com)
+ * Web:  https://github.com/nemanja93tomin
  * Date: 5/31/2017
  * Time: 11:55 AM
  */
@@ -52,7 +52,7 @@
             var target = $(this).attr('data-target');
             var index = $(this).parent().index();
             var offset = Math.abs(index -active);
-            console.log(offset);
+            // console.log(offset);
             $('html, body').animate({
                 'scroll-top':$(target).offset().top -69
             },500 * offset
@@ -64,7 +64,7 @@
             var target = $(this).attr('data-target');
             var index = $(this).parent().index();
             var offset = Math.abs(index -active);
-            console.log(offset);
+            // console.log(offset);
             $('html, body').animate({
                 'scroll-top':$(target).offset().top -320
             },500 * offset
